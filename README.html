@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>KeepToEvernote</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+/* From extension ms-toolsai.jupyter */
+/* These classnames are inherited from bootstrap, but are present in most notebook renderers */
+
+.alert {
+    width: auto;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.alert > *:last-child {
+    margin-bottom: 0;
+}
+#preview > .alert:last-child {
+    /* Prevent this being set to zero by the default notebook stylesheet */
+    padding-bottom: 1em;
+}
+
+.alert-success {
+    /* Note there is no suitable color available, so we just copy "info" */
+    background-color: var(--theme-info-background);
+    color: var(--theme-info-foreground);
+}
+.alert-info {
+    background-color: var(--theme-info-background);
+    color: var(--theme-info-foreground);
+}
+.alert-warning {
+    background-color: var(--theme-warning-background);
+    color: var(--theme-warning-foreground);
+}
+.alert-danger {
+    background-color: var(--theme-error-background);
+    color: var(--theme-error-foreground);
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-dark">
+        <h1 id="keeptoevernote">KeepToEvernote</h1>
+<p>This project provides a simple command-line application for converting Google Keep notes into notes that can be imported into Evernote. It was created by me, TheSameCat in order to import my own notes, and I thought it would be useful.</p>
+<p>Right now the program supports importing text notes, and to-do style lists.</p>
+<p>I tested this against Evernote 10.49.4</p>
+<h1 id="how-to-get-your-notes-out-of-google-keep">How to get your notes out of Google Keep</h1>
+<p>Use Google Takeout. It is a simple process. Just uncheck all of the other account information, and leave Keep checked. You will get a download for a zip file containing all of your notes in HTML and JSON format. It is the JSON format we are interested in.</p>
+<h1 id="how-to-run-the-program">How to run the program</h1>
+<p>I suggest copying the executable into the folder with the JSON files, opening a command line, and running:</p>
+<p><code>KeepToEvernote.exe *.json</code></p>
+<p>The ENEX files can then be imported into EverNote using the File-&gt;Import command.</p>
+<p>(Note, you should have the notebook you wish to import to open in Evernote before beginning import.)</p>
+<h1 id="how-to-contribute">How to contribute</h1>
+<p>This is not a huge piece of code, but if you see something that could make it better, please submit a PR! If you would like to expand upon this guide, provide screenshots, etc., you can submit a PR for that as well. All requests will be answered promptly.</p>
+<p>Thank you for your interest in KeepToEvernote!</p>
+
+        
+        
+    </body>
+    </html>
