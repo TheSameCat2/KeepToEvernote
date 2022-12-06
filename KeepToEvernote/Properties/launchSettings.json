@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "KeepToEvernote": {
+      "commandName": "Project",
+      "commandLineArgs": "*.json"
+    }
+  }
+}
